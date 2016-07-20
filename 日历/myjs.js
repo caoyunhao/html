@@ -30,36 +30,65 @@ function addMemberIcon(name){
 	++icon_num;
 }
 
+////添加组员
+//var member_num = 1;
+//function addMember(name){
+//	var newfield = document.createElement('div'); //创建一个div
+//	var field_id = 'field_id_'+member_num;
+//	newfield.setAttribute('id',field_id); //定义该div的id
+//	newfield.setAttribute('class', 'field');
+//	document.getElementById("member_list").appendChild(newfield);
+//	
+//	var newcheckbox = document.createElement('div'); //创建一个div
+//	var checkbox_id = 'checkbox_id_'+member_num;
+//	newcheckbox.setAttribute('id',checkbox_id);
+//	newcheckbox.setAttribute('class', 'ui checkbox');
+//	document.getElementById(field_id).appendChild(newcheckbox);
+//	
+//	var newinput = document.createElement('input'); //创建一个input
+//	var input_id = 'input_id_'+member_num;
+//	newinput.setAttribute('id',input_id);
+//	newinput.setAttribute('type', 'checkbox');
+//	document.getElementById(checkbox_id).appendChild(newinput);
+//	
+//	var newlabel = document.createElement('label'); //创建一个label
+//	var label_id = 'label_id_'+member_num;
+//	newlabel.setAttribute('id',label_id);
+//	newlabel.innerHTML = name;
+//	document.getElementById(checkbox_id).appendChild(newlabel);
+//	++member_num;
+//}
+
 //添加组员
 var member_num = 1;
-function addMember(name){
-	var newfield = document.createElement('div'); //创建一个div
-	var field_id = 'field_id_'+member_num;
-	newfield.setAttribute('id',field_id); //定义该div的id
-	newfield.setAttribute('class', 'field');
-	document.getElementById("member_list").appendChild(newfield);
+function addMember(string_name){
+	var newdiv = document.createElement('div'); //创建一个div
+	var div_id = 'div_id_'+member_num;
+	newdiv.setAttribute('id',div_id); //定义该div的id
+	newdiv.setAttribute('class', 'item_list');
+	document.getElementById("member_list").appendChild(newdiv);
 	
-	var newcheckbox = document.createElement('div'); //创建一个div
-	var checkbox_id = 'checkbox_id_'+member_num;
-	newcheckbox.setAttribute('id',checkbox_id);
-	newcheckbox.setAttribute('class', 'ui checkbox');
-	document.getElementById(field_id).appendChild(newcheckbox);
+	var newspan = document.createElement('span'); //创建一个div
+	var span_id = 'span_id_'+member_num;
+	newspan.setAttribute('id',span_id);
+	newspan.innerHTML = string_name;
+	//newcheckbox.setAttribute('class', 'ui checkbox');
+	document.getElementById(div_id).appendChild(newspan);
 	
-	var newinput = document.createElement('input'); //创建一个input
-	var input_id = 'input_id_'+member_num;
-	newinput.setAttribute('id',input_id);
-	newinput.setAttribute('type', 'checkbox');
-	document.getElementById(checkbox_id).appendChild(newinput);
+	var newdiv2 = document.createElement('div'); //创建一个input
+	var div2_id = 'div2_id_'+member_num;
+	newdiv2.setAttribute('id',div2_id);
+	newdiv2.setAttribute('class', 'ui green circular icon button');
+	newdiv2.setAttribute('onClick', 'button_change('+div2_id+')');
+	document.getElementById(div_id).appendChild(newdiv2);
 	
-	var newlabel = document.createElement('label'); //创建一个label
-	var label_id = 'label_id_'+member_num;
-	newlabel.setAttribute('id',label_id);
-	newlabel.innerHTML = name;
-	document.getElementById(checkbox_id).appendChild(newlabel);
+	var newi = document.createElement('i'); //创建一个label
+	var i_id = 'i_id_'+member_num;
+	newi.setAttribute('id',i_id);
+	newi.setAttribute('class', 'icon add');
+	document.getElementById(div2_id).appendChild(newi);
 	++member_num;
 }
-
-
 
 function addFriend(name){
 	
@@ -82,7 +111,10 @@ function setWeekButton(day, time, has){
 		day.style.color="black";
 	}
 }
-
+function buttonChange(string_id){
+	alert('a');
+	document.getElementById(string_id).setAttribute('class', 'ui red circular icon button');
+}
 var needCreate = true;
 function createNew(text){
 	needCreate = true;
