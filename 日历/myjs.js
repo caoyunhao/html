@@ -79,7 +79,8 @@ function addMember(string_name){
 	var div2_id = 'div2_id_'+member_num;
 	newdiv2.setAttribute('id',div2_id);
 	newdiv2.setAttribute('class', 'ui green circular icon button');
-	newdiv2.setAttribute('onClick', 'button_change('+div2_id+')');
+	newdiv2.setAttribute('onClick', 'buttonChange(\''+div2_id+'\')');
+	alert(newdiv2.getAttribute('onClick'));
 	document.getElementById(div_id).appendChild(newdiv2);
 	
 	var newi = document.createElement('i'); //创建一个label
