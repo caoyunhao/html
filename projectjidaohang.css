@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+#u518 {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 0px;
+}
+#u519_div {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: rgba(215, 215, 215, 1);
+	border: none;
+	border-radius: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	left: 0px;
+	top: 45px;
+}
+.erjidaohang{
+	position: relative;
+	width: 1350px;
+	margin:0 auto;
+}
+#u519 {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 0px;
+}
+
+#u521 {
+	position: absolute;
+	left: 314px;
+	width: 182px;
+	height: 40px;
+	font-size: 50px;
+	color: rgba(0,0,0,0.00);
+}
+#u523 {
+  position:absolute;
+  left:496px;
+  width:182px;
+  height:40px;
+  font-weight:400;
+  font-style:normal;
+  font-size:50px;
+  color:#000000;
+}
+#u525 {
+  position:absolute;
+  left:688px;
+  width:182px;
+  height:40px;
+  font-weight:400;
+  font-style:normal;
+  font-size:15px;
+  color:#000000;
+}
+#u527 {
+  position:absolute;
+  left:870px;
+  width:182px;
+  height:40px;
+  font-weight:400;
+  font-style:normal;
+  font-size:15px;
+  color:#000000;
+}
+
+.nav_item2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 40px;
+	background-color: rgba(215,215,215,1);
+	border: none;
+	border-radius: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+	color: #000000;
+}
+
+.nav_item2:hover {
+	background-color: rgba(235,235,235,1);
+	text-align: center;
+}
+.nav_item2:focus {
+	background-color: rgba(242,242,242,1);
+	outline: none;
+}

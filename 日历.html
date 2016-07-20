@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>日历</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <link href="日历/styles.css" type="text/css" rel="stylesheet"/>
+	<link href="daohanglan.css" type="text/css" rel="stylesheet"/>
+	<link href="Semantic-UI-master/semantic.min.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" language="javascript" src="Semantic-UI-master/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="Semantic-UI-master/iframe.js"></script>
+	<script type="text/javascript" language="javascript" src="Semantic-UI-master/semantic.min.js"></script>
+	<script type="text/javascript" language="javascript" src="日历/myjs.js"></script>
+
+  </head>
+  <body>
+    <div id="base">
+		<!-- 导航 (组合) -->
+		<div id="u24">
+			<div id="u25_div" class=""></div>
+				<!-- 导航栏 (矩形) -->
+				<div id="u25"> 		
+					<!-- logo (矩形) -->
+					<div id="u27">
+						<button class="nav_item">WeekDaY</button>
+					</div>
+					
+					<!-- 项目 (矩形) -->
+					<div id="u29">
+						<button class="nav_item">项 目</button>
+					</div>
+					
+					<!-- 我的 (矩形) -->
+					<div id="u31">
+						<button class="nav_item">我 的</button>
+					</div>
+					
+					<!-- 日历 (矩形) -->
+					<div id="u33">
+						<button class="nav_item">日 历</button>
+					</div>
+					
+					<!-- 通知 (矩形) -->
+					<div id="u35">
+						<button class="nav_item">通 知</button>
+					</div>
+					
+					<!-- 搜索 (形状) -->
+					<div id="u37">
+						<button class="nav_item u37_img"></button>
+					</div>
+					
+					<!-- 用户 (形状) -->
+					<div id="u39">
+						<button class="nav_item u39_img"></button>
+					</div>
+				</div>
+			</div>
+		<!-- 二级导航 (组合) -->
+		<div id="u691" class="ax_default" data-label="二级导航">
+
+	<!-- 二级导航栏 (矩形) -->
+	<div id="u692" class="ax_default box_3" data-label="二级导航栏">
+	  <div id="u692_div" class=""></div>
+	  </div>
+	<div id="riqi">
+		<!-- 向左 (形状) -->
+		<div id="u694" class="ax_default icon" data-label="向左">
+		  <button class="xiangzuo no_border" onClick="setYear(2016)"></button>
+		</div>
+
+		<!-- 年 (矩形) -->
+		<div id="u697" class="ax_default label" data-label="年">
+		  <span id="year">2016</span>年
+		</div>
+			
+		<!-- 月 (矩形) -->
+		<div id="u699" class="ax_default label" data-label="月">
+		  <span id="month">07</span>月
+		</div>
+
+		<!-- 向右 (形状) -->
+		<div id="u701" data-label="向右">
+			<button id="right_button" class="xiangyou no_border" onClick="setYear(2017)"></button>
+		</div>
+	</div>
+	</div>
+		<div id="neirong_div">
+			  <!-- Unnamed (组合) -->
+			  <div id="u703" class="ax_default">
+				<!-- Unnamed (矩形) -->
+				<div id="u704" class="ax_default box_3">
+				  <div id="u704_div" class="">
+				  	<div style="position:absolute; top:15px; width:200px">
+						<div class="ui orange animated button" onClick="showThirdModal()">
+						  <div class="visible content">关注成员</div>
+						  <div class="hidden content">
+							打开成员列表
+						  </div>
+						</div>
+					</div>
+					<div style="position:absolute; left:210px; top:15px;">
+						<div class="ui buttons">
+						  <div class="ui button" onClick="">上一周</div>
+						  <div id="week_num" class="or" data-text="1"></div>
+						  <div class="ui positive button" onClick="">下一周</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+		
+				<!-- Unnamed (水平线) -->
+				<div id="u708" class="ax_default line"></div>
+		
+				<!-- 一周 (组合) -->
+				<div id="u710" class="ax_default" data-label="一周">
+		
+				  <!-- 周一 (组合) -->
+				  <div id="u711" class="ax_default" data-label="周一">
+		
+					<!-- 周一日期 (矩形) -->
+					<div id="u712" class="ax_default box_2" data-label="周一日期">
+						<button id="Monday" class="myfull btn_bgcolor_bule_pale border_r_15px text_white no_border"></button>
+					  </div>
+					</div>
+		
+					<!-- Unnamed (矩形) -->
+					<div id="u714" class="ax_default _三级标题">
+					  <div id="u714_div" class=""></div>
+					  <!-- Unnamed () -->
+					  <div id="u715" class="text" style="visibility: visible;">
+						<p><span>星期一</span></p>
+					  </div>
+					</div>
+				  </div>
+		
+				  <!-- 周二 (组合) -->
+				  <div id="u716" class="ax_default" data-label="周二">
+		
+					<!-- 周二日期 (矩形) -->
+					<div id="u717" class="ax_default box_2" data-label="周二日期">
+					  <button id="Tuesday" class="myfull btn_bgcolor_bule_pale border_r_15px text_white no_border margin_bottom_22px"></button>
+					</div>
+		
+					<!-- Unnamed (矩形) -->
+					<div id="u719" class="ax_default _三级标题">
+					  <div id="u719_div" class=""></div>
+					  <!-- Unnamed () -->
+					  <div id="u720" class="text" style="visibility: visible;">
+						<p><span>星期二</span></p>
+					  </div>
+					</div>
+				  </div>
+		
+				  <!-- 周三 (组合) -->
+				  <div id="u721" class="ax_default" data-label="周三">
+		
+					<!-- 周三日期 (矩形) -->
+					<div id="u722" class="ax_default box_2" data-label="周三日期">
+					  <button id="Wednesday" class="myfull btn_bgcolor_bule_pale border_r_15px text_white no_border"></button>
+					</div>
+		
+					<!-- Unnamed (矩形) -->
+					<div id="u724" class="ax_default _三级标题">
+					  <div id="u724_div" class=""></div>
+					  <!-- Unnamed () -->
+					  <div id="u725" class="text" style="visibility: visible;">
+						<p><span>星期三</span></p>
+					  </div>
+					</div>
+				  </div>
+		
+				  <!-- 周四 (组合) -->
+				  <div id="u726" class="ax_default" data-label="周四">
+		
+					<!-- 周四日期 (矩形) -->
+					<div id="u727" class="ax_default box_2" data-label="周四日期">
+					  <button id="Thursday" class="myfull btn_bgcolor_bule_pale border_r_15px text_px18 text_white no_border" onClick="setWeekButton('Thursday', '2016/10/30', 1)"></button>
+					</div>
+		
+					<!-- Unnamed (矩形) -->
+					<div id="u729" class="ax_default _三级标题">
+					  <div id="u729_div" class=""></div>
+					  <!-- Unnamed () -->
+					  <div id="u730" class="text" style="visibility: visible;">
+						<p><span>星期四</span></p>
+					  </div>
+					</div>
+				  </div>
+		
+				  <!-- 周五 (组合) -->
+				  <div id="u731" class="ax_default" data-label="周五">
+		
+					<!-- 周五日期 (矩形) -->
+					<div id="u732" class="ax_default box_2" data-label="周五日期">
+					  <button id="Friday" class="myfull btn_bgcolor_bule_pale border_r_15px text_white no_border"></button>
+					</div>
+		
+					<!-- Unnamed (矩形) -->
+					<div id="u734" class="ax_default _三级标题">
+					  <div id="u734_div" class=""></div>
+					  <!-- Unnamed () -->
+					  <div id="u735" class="text" style="visibility: visible;">
+						<p><span>星期五</span></p>
+					  </div>
+					</div>
+				  </div>
+		
+				  <!-- 周六 (组合) -->
+				  <div id="u736" class="ax_default" data-label="周六">
+		
+					<!-- 周六日期 (矩形) -->
+					<div id="u737" class="ax_default box_2" data-label="周六日期">
+					  <button id="Saturday" class="myfull btn_bgcolor_bule_pale border_r_15px text_white no_border"></button>
+					</div>
+		
+					<!-- Unnamed (矩形) -->
+					<div id="u739" class="ax_default _三级标题">
+					  <div id="u740" class="text" style="visibility: visible;">
+						<p><span>星期六</span></p>
+					  </div>
+					</div>
+				  </div>
+		
+				  <!-- 周日 (组合) -->
+				  <div id="u741" class="ax_default" data-label="周日">
+		
+					<!-- 周日日期 (矩形) -->
+					<div id="u742" class="ax_default box_2" data-label="周日日期">
+					  <button id="Sunday" class="myfull btn_bgcolor_bule_pale border_r_15px text_white no_border"></button>
+					</div>
+		
+					<!-- Unnamed (矩形) -->
+					<div id="u744" class="ax_default _三级标题">
+					  <div id="u744_div" class=""></div>
+					  <!-- Unnamed () -->
+					  <div id="u745" class="text" style="visibility: visible;">
+						<p><span>星期日</span></p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  
+
+			  <!-- Unnamed (组合) -->
+			  <div id="u746" class="ax_default">
+		
+				<!-- Unnamed (矩形) -->
+				<div id="u747" class="ax_default box_2">
+				  <div id="u747_div" class=""></div>
+				</div>
+		
+				<!-- Unnamed (矩形) -->
+				<div id="u749" class="ax_default _二级标题">
+				  <div id="u749_div" class=""></div>
+				  <!-- Unnamed () -->
+				  <div id="u750" class="text" style="visibility: visible;">
+					<p><span>日程</span></p>
+				  </div>
+				</div>
+		
+				<!-- Unnamed (水平线) -->
+				<div id="u751"></div>
+		
+				<!-- 日程列表 (组合) -->
+				<div id="u753" class="ax_default" data-label="日程列表">
+					
+				  <!-- 日程一 (矩形) -->
+				  <div id="u754" class="ax_default box_2" data-label="日程一">
+					<button class="btn_bgcolor_gray_pale height_45px width_full no_border border_r_15px" style="display:none;"></button>
+				  </div>
+				</div>
+		
+				<!-- 新建日程按钮 (矩形) -->
+				<div id="u762" class="ax_default box_2" data-label="新建日程按钮" onClick="createNew()">
+				  <button class="btn_bgcolor_blue myfull no_border border_r_15px text_white">+ 新建日程</button>
+				  <!-- Unnamed () --> 
+				</div>
+			  </div>
+		  </div>
+    </div>
+	
+	
+	<!--弹出层-->
+	<div class="ui first modal">
+		  <i class="close icon"></i>
+			  <div class="header">
+			   新建日程
+			  </div>
+			  <div class="content" style="margin:5px auto">
+				<div class="ui fluid huge input">
+				  <input type="text" placeholder="日程标题">
+				</div>
+				<div class="ui fluid input" style="margin:5px auto">
+				  <input type="text" placeholder="地点">
+				</div>
+					<table class="ui celled table" style="margin:10px auto">
+					  <tbody>
+						<tr>
+						  <td style="width:25%" class="bgcolor_gray_pale text_px18 center aligned">开始时间</td>
+						  <td style="width:25%">
+						  	<div class="ui fluid selection dropdown">
+								<input type="hidden" name="starttime">
+								<i class="dropdown icon"></i>
+								<div class="default text">选择时间</div>
+								  <div class="menu">
+									<div class="item" data-value="male">00:00</div>
+									<div class="item" data-value="male">00:15</div>
+									<div class="item" data-value="male">00:30</div>
+									<div class="item" data-value="male">00:45</div>
+									<div class="item" data-value="male">01:00</div>
+									<div class="item" data-value="male">01:15</div>
+									<div class="item" data-value="male">01:30</div>
+									<div class="item" data-value="male">01:45</div>
+									<div class="item" data-value="male">02:00</div>
+									<div class="item" data-value="male">02:15</div>
+									<div class="item" data-value="male">02:30</div>
+									<div class="item" data-value="male">02:45</div>
+									<div class="item" data-value="male">03:00</div>
+									<div class="item" data-value="male">03:15</div>
+									<div class="item" data-value="male">03:30</div>
+									<div class="item" data-value="male">03:45</div>
+									<div class="item" data-value="male">04:00</div>
+									<div class="item" data-value="male">04:15</div>
+									<div class="item" data-value="male">04:30</div>
+									<div class="item" data-value="male">04:45</div>
+									<div class="item" data-value="male">05:00</div>
+									<div class="item" data-value="male">05:15</div>
+									<div class="item" data-value="male">05:30</div>
+									<div class="item" data-value="male">05:45</div>
+									<div class="item" data-value="male">06:00</div>
+									<div class="item" data-value="male">06:15</div>
+									<div class="item" data-value="male">06:30</div>
+									<div class="item" data-value="male">06:45</div>
+									<div class="item" data-value="male">07:00</div>
+									<div class="item" data-value="male">07:15</div>
+									<div class="item" data-value="male">07:30</div>
+									<div class="item" data-value="male">07:45</div>
+									<div class="item" data-value="male">08:00</div>
+									<div class="item" data-value="male">08:15</div>
+									<div class="item" data-value="male">08:30</div>
+									<div class="item" data-value="male">08:45</div>
+									<div class="item" data-value="male">09:00</div>
+									<div class="item" data-value="male">09:15</div>
+									<div class="item" data-value="male">09:30</div>
+									<div class="item" data-value="male">09:45</div>
+									<div class="item" data-value="male">10:00</div>
+									<div class="item" data-value="male">10:15</div>
+									<div class="item" data-value="male">10:30</div>
+									<div class="item" data-value="male">10:45</div>
+									<div class="item" data-value="male">11:00</div>
+									<div class="item" data-value="male">11:15</div>
+									<div class="item" data-value="male">11:30</div>
+									<div class="item" data-value="male">11:45</div>
+									<div class="item" data-value="male">12:00</div>
+									<div class="item" data-value="male">12:15</div>
+									<div class="item" data-value="male">12:30</div>
+									<div class="item" data-value="male">12:45</div>
+									<div class="item" data-value="male">13:00</div>
+									<div class="item" data-value="male">13:15</div>
+									<div class="item" data-value="male">13:30</div>
+									<div class="item" data-value="male">13:45</div>
+									<div class="item" data-value="male">14:00</div>
+									<div class="item" data-value="male">14:15</div>
+									<div class="item" data-value="male">14:30</div>
+									<div class="item" data-value="male">14:45</div>
+									<div class="item" data-value="male">15:00</div>
+									<div class="item" data-value="male">15:15</div>
+									<div class="item" data-value="male">15:30</div>
+									<div class="item" data-value="male">15:45</div>
+									<div class="item" data-value="male">16:00</div>
+									<div class="item" data-value="male">16:15</div>
+									<div class="item" data-value="male">16:30</div>
+									<div class="item" data-value="male">16:45</div>
+									<div class="item" data-value="male">17:00</div>
+									<div class="item" data-value="male">17:15</div>
+									<div class="item" data-value="male">17:30</div>
+									<div class="item" data-value="male">17:45</div>
+									<div class="item" data-value="male">18:00</div>
+									<div class="item" data-value="male">18:15</div>
+									<div class="item" data-value="male">18:30</div>
+									<div class="item" data-value="male">18:45</div>
+									<div class="item" data-value="male">19:00</div>
+									<div class="item" data-value="male">19:15</div>
+									<div class="item" data-value="male">19:30</div>
+									<div class="item" data-value="male">19:45</div>
+									<div class="item" data-value="male">20:00</div>
+									<div class="item" data-value="male">20:15</div>
+									<div class="item" data-value="male">20:30</div>
+									<div class="item" data-value="male">20:45</div>
+									<div class="item" data-value="male">21:00</div>
+									<div class="item" data-value="male">21:15</div>
+									<div class="item" data-value="male">21:30</div>
+									<div class="item" data-value="male">21:45</div>
+									<div class="item" data-value="male">22:00</div>
+									<div class="item" data-value="male">22:15</div>
+									<div class="item" data-value="male">22:30</div>
+									<div class="item" data-value="male">22:45</div>
+									<div class="item" data-value="male">23:00</div>
+									<div class="item" data-value="male">23:15</div>
+									<div class="item" data-value="male">23:30</div>
+									<div class="item" data-value="male">23:45</div>
+								  </div>
+								</div>
+						  </td>
+						  <td style="width:25%" class="bgcolor_gray_pale text_px18 center aligned">结束时间</td>
+						  <td style="width:25%">
+						  	<div class="ui fluid selection dropdown">
+								<input type="hidden" name="starttime">
+								<i class="dropdown icon"></i>
+								<div class="default text">选择时间</div>
+								  <div class="menu">
+									<div class="item" data-value="male">00:00</div>
+									<div class="item" data-value="male">00:15</div>
+									<div class="item" data-value="male">00:30</div>
+									<div class="item" data-value="male">00:45</div>
+									<div class="item" data-value="male">01:00</div>
+									<div class="item" data-value="male">01:15</div>
+									<div class="item" data-value="male">01:30</div>
+									<div class="item" data-value="male">01:45</div>
+									<div class="item" data-value="male">02:00</div>
+									<div class="item" data-value="male">02:15</div>
+									<div class="item" data-value="male">02:30</div>
+									<div class="item" data-value="male">02:45</div>
+									<div class="item" data-value="male">03:00</div>
+									<div class="item" data-value="male">03:15</div>
+									<div class="item" data-value="male">03:30</div>
+									<div class="item" data-value="male">03:45</div>
+									<div class="item" data-value="male">04:00</div>
+									<div class="item" data-value="male">04:15</div>
+									<div class="item" data-value="male">04:30</div>
+									<div class="item" data-value="male">04:45</div>
+									<div class="item" data-value="male">05:00</div>
+									<div class="item" data-value="male">05:15</div>
+									<div class="item" data-value="male">05:30</div>
+									<div class="item" data-value="male">05:45</div>
+									<div class="item" data-value="male">06:00</div>
+									<div class="item" data-value="male">06:15</div>
+									<div class="item" data-value="male">06:30</div>
+									<div class="item" data-value="male">06:45</div>
+									<div class="item" data-value="male">07:00</div>
+									<div class="item" data-value="male">07:15</div>
+									<div class="item" data-value="male">07:30</div>
+									<div class="item" data-value="male">07:45</div>
+									<div class="item" data-value="male">08:00</div>
+									<div class="item" data-value="male">08:15</div>
+									<div class="item" data-value="male">08:30</div>
+									<div class="item" data-value="male">08:45</div>
+									<div class="item" data-value="male">09:00</div>
+									<div class="item" data-value="male">09:15</div>
+									<div class="item" data-value="male">09:30</div>
+									<div class="item" data-value="male">09:45</div>
+									<div class="item" data-value="male">10:00</div>
+									<div class="item" data-value="male">10:15</div>
+									<div class="item" data-value="male">10:30</div>
+									<div class="item" data-value="male">10:45</div>
+									<div class="item" data-value="male">11:00</div>
+									<div class="item" data-value="male">11:15</div>
+									<div class="item" data-value="male">11:30</div>
+									<div class="item" data-value="male">11:45</div>
+									<div class="item" data-value="male">12:00</div>
+									<div class="item" data-value="male">12:15</div>
+									<div class="item" data-value="male">12:30</div>
+									<div class="item" data-value="male">12:45</div>
+									<div class="item" data-value="male">13:00</div>
+									<div class="item" data-value="male">13:15</div>
+									<div class="item" data-value="male">13:30</div>
+									<div class="item" data-value="male">13:45</div>
+									<div class="item" data-value="male">14:00</div>
+									<div class="item" data-value="male">14:15</div>
+									<div class="item" data-value="male">14:30</div>
+									<div class="item" data-value="male">14:45</div>
+									<div class="item" data-value="male">15:00</div>
+									<div class="item" data-value="male">15:15</div>
+									<div class="item" data-value="male">15:30</div>
+									<div class="item" data-value="male">15:45</div>
+									<div class="item" data-value="male">16:00</div>
+									<div class="item" data-value="male">16:15</div>
+									<div class="item" data-value="male">16:30</div>
+									<div class="item" data-value="male">16:45</div>
+									<div class="item" data-value="male">17:00</div>
+									<div class="item" data-value="male">17:15</div>
+									<div class="item" data-value="male">17:30</div>
+									<div class="item" data-value="male">17:45</div>
+									<div class="item" data-value="male">18:00</div>
+									<div class="item" data-value="male">18:15</div>
+									<div class="item" data-value="male">18:30</div>
+									<div class="item" data-value="male">18:45</div>
+									<div class="item" data-value="male">19:00</div>
+									<div class="item" data-value="male">19:15</div>
+									<div class="item" data-value="male">19:30</div>
+									<div class="item" data-value="male">19:45</div>
+									<div class="item" data-value="male">20:00</div>
+									<div class="item" data-value="male">20:15</div>
+									<div class="item" data-value="male">20:30</div>
+									<div class="item" data-value="male">20:45</div>
+									<div class="item" data-value="male">21:00</div>
+									<div class="item" data-value="male">21:15</div>
+									<div class="item" data-value="male">21:30</div>
+									<div class="item" data-value="male">21:45</div>
+									<div class="item" data-value="male">22:00</div>
+									<div class="item" data-value="male">22:15</div>
+									<div class="item" data-value="male">22:30</div>
+									<div class="item" data-value="male">22:45</div>
+									<div class="item" data-value="male">23:00</div>
+									<div class="item" data-value="male">23:15</div>
+									<div class="item" data-value="male">23:30</div>
+									<div class="item" data-value="male">23:45</div>
+								  </div>
+								</div>
+						  </td>
+						</tr>
+					  </tbody>
+					</table>
+					<table class="ui celled table"  style="margin:5px auto">
+						<tbody>
+							<tr>
+							<td class="bgcolor_gray_pale text_px18 center aligned" style="width:25%">重复性</td>
+							<td style="width:50%; margin:0 auto;">
+								<div class="ui form text_px16" style="width:100%; margin:0 auto;">
+								  <div class="grouped fields">
+									  <div class="ui radio checkbox" style="width:30%; margin-left:5%">
+										<input type="radio" name="fruit" checked="checked">
+										<label>不重复</label>
+									  </div>
+									  <div class="ui radio checkbox" style="width:30%;">
+										<input type="radio" name="fruit">
+										<label>每日一次</label>
+									  </div>
+									  <div class="ui radio checkbox" style="width:30%;">
+										<input type="radio" name="fruit">
+										<label>每周一次</label>
+									  </div>
+								  </div>
+								</div>
+							</td>
+							<td class="bgcolor_blue_dark text_white text_px18 center aligned" style="width:12.5%">隐私模式</td>
+							<td style="width:12.5%" class="center aligned">
+								<div class="ui toggle checkbox">
+								  <input type="checkbox" name="public">
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<table class="ui celled table" style="margin:10px auto">
+						<tbody>
+							<tr>
+								<td class="center aligned bgcolor_gray_pale text_px18">参与者</td>
+							</tr>
+							<tr>
+								<td class="text_px18" id="member_icon_list">
+									<div class="ui green circular icon button" onClick="addMemberButton()">
+									  <i class="icon add"></i>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+			  </div>
+			  <div class="actions">
+				<div id="modal2_cancel_button" class="ui button" onClick="closeFirstModal()">取消</div>
+				<div id="modal2_confir_button"class="ui button" onClick="createContent('132456')">确定</div>
+			  </div>
+	</div>
+	
+	
+	<div class="ui second modal" style="margin-left:-150px;width:300px;text-align:center">
+		<div class="header">
+			 选择成员
+		</div>
+		<div class="content" style="margin-left:auto; margin-right:auto;width:200px; text-align:left">
+			<div class="ui form" id="member_list">
+			  <div class="field">
+				<div class="ui checkbox" id="demo1">
+				  <input type="checkbox">
+				  <label> 成员1</label>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="actions" style="text-align:center">
+			<div class="ui button" onClick="closeSecondModal()">取消</div>
+			<div class="ui button" onClick="selectMember()">确定</div>
+		</div>
+	</div>
+  </body>
+</html>

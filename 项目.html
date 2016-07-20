@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>项目</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <link href="项目/styles.css" type="text/css" rel="stylesheet"/>
+
+	<link href="daohanglan.css" type="text/css" rel="stylesheet"/>
+	<link href="projectjidaohang.css" type="text/css" rel="stylesheet"/>
+	<link href="Semantic-UI-master/semantic.min.css" type="text/css" rel="stylesheet"/>
+    <link href="tanchu.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" language="javascript" src="Semantic-UI-master/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="Semantic-UI-master/iframe.js"></script>
+	<script type="text/javascript" language="javascript" src="Semantic-UI-master/semantic.min.js"></script>
+	<script src="tanchu.js" type="text/javascript" language="javascript"></script>
+    
+  </head>
+  <body>
+  
+  	    <div id="tanchu">
+            <p id="createtitle">
+            新建项目
+            <i class="remove icon" style="float:right" onClick="closeDiv()"></i>
+            </p>
+        
+            <div id="createimage">
+            <img src="createproject.PNG"/>
+            </div>
+        
+            <div class="ui input"; style="border:#12A6F8">
+            <input  id="nameinput" placeholder="项目名称" style="width:240px; border-color:#999999"/>
+            </div>
+        
+            <div style=" margin-top:20px">
+            <button class="ui button" style="width:240px; background-color:#12A6F8; color:#FFFFFF"; onClick="createDiv(document.getElementById('nameinput').value)">
+              完成并创建
+            </button>
+            </div>
+    	</div>
+ 	
+
+     <div id="base" class="">
+
+      <!-- 导航 (组合) -->
+      	<div id="u24">
+			<div id="u25_div"></div>
+				<!-- 导航栏 (矩形) -->
+				<div id="u25"> 
+					
+					<!-- logo (矩形) -->
+					<div id="u27">
+						<button class="nav_item">WeekDaY</button>
+					</div>
+					
+					<!-- 项目 (矩形) -->
+					<div id="u29">
+						<button class="nav_item">项 目</button>
+					</div>
+					
+					<!-- 我的 (矩形) -->
+					<div id="u31">
+						<button class="nav_item">我 的</button>
+					</div>
+					
+					<!-- 日历 (矩形) -->
+					<div id="u33">
+						<button class="nav_item">日 历</button>
+					</div>
+					
+					<!-- 通知 (矩形) -->
+					<div id="u35">
+						<button class="nav_item">通 知</button>
+					</div>
+					
+					<!-- 搜索 (形状) -->
+					<div id="u37">
+						<button class="nav_item u37_img"></button>
+					</div>
+					
+					<!-- 用户 (形状) -->
+					<div id="u39">
+						<button class="nav_item u39_img"></button>
+					</div>
+		
+				</div>
+		
+
+				  <!-- 二级导航栏 (矩形) -->
+				<div id="u519_div">
+				
+					<div class="erjidaohang">
+					  <!-- 项目近期 (矩形) -->
+					  <div id="u521">
+						<button class="nav_item2">任 务</button>
+					  </div>
+			
+					  <!-- 项目任务 (矩形) -->
+					  <div id="u523">
+						<button class="nav_item2">分 享</button>
+					  </div>
+			
+					  <!-- 项目日程 (矩形) -->
+					  <div id="u525">
+						<button class="nav_item2">文 件</button>
+					  </div>
+			
+					  <!-- 讨论帖 (矩形) -->
+		
+					   <div id="u527">
+						<button class="nav_item2">日 程</button>
+					   </div>
+				   </div>
+				</div>
+			</div>
+		</div>
+      <!-- Unnamed (组合) -->
+      <div id="u151" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u152" class="ax_default box_1">
+          <div id="u152_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u153" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u154" class="ax_default _二级标题">
+          <div id="u154_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u155" class="text" style="visibility: visible;">
+            <p><span>个人项目</span></p>
+          </div>
+        </div>
+
+
+
+          
+
+          <!--列表-->
+          <div id="u159">
+            
+          </div>
+          
+
+        <!-- 新建项目 (矩形) -->
+        <div id="u167" data-label="新建项目">
+			<button class="myfull border_r_15px btn_bgcolor_blue text_px20 text_white no_border" onClick="showDiv()">+新建项目</button>
+        </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import url("../SFNSDisplay_Light/stylesheet.css");
+/* CSS Document */
+body {
+	background-image: none;
+	position: static;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	background-color: #F2F2F2;
+	font-family: "SFNSDisplay Light";
+}
+#base {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F2F2F2;
+}
+#u518 {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 0px;
+}
+#u519_div {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: rgba(215, 215, 215, 1);
+	border: none;
+	border-radius: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	left: 0px;
+	top: 45px;
+}
+#u519 {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 0px;
+}
+
+#u521 {
+	position: absolute;
+	left: 435px;
+	top: 45px;
+	width: 80px;
+	height: 40px;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	color: #000000;
+}
+#u523 {
+  position:absolute;
+  left:617px;
+  top:45px;
+  width:80px;
+  height:40px;
+  font-weight:400;
+  font-style:normal;
+  font-size:15px;
+  color:#000000;
+}
+#u525 {
+  position:absolute;
+  left:809px;
+  top:45px;
+  width:80px;
+  height:40px;
+  font-weight:400;
+  font-style:normal;
+  font-size:15px;
+  color:#000000;
+}
+#u527 {
+  position:absolute;
+  left:991px;
+  top:45px;
+  width:80px;
+  height:40px;
+  font-weight:400;
+  font-style:normal;
+  font-size:15px;
+  color:#000000;
+}
+
+.nav_item2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 80px;
+	height: 40px;
+	background-color: rgba(215,215,215,1);
+	border: none;
+	border-radius: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+	color: #000000;
+}
+
+.nav_item2:hover {
+	background-color: rgba(235,235,235,1);
+
+}
+.nav_item2:focus {
+	background-color: rgba(242,242,242,1);
+	outline: none;
+}

@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>项目分享</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<link href="项目分享/styles.css" type="text/css" rel="stylesheet"/>
+<link href="daohanglan.css" type="text/css" rel="stylesheet"/>
+<link href="projectjidaohang.css" type="text/css" rel="stylesheet"/>
+<link href="Semantic-UI-master/semantic.min.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" language="javascript" src="Semantic-UI-master\jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="Semantic-UI-master\iframe.js"></script>
+<script type="text/javascript" language="javascript" src="Semantic-UI-master\semantic.min.js"></script>
+<script type="text/javascript" language="javascript" src="项目分享/myjs.js"></script>
+</head>
+<body>
+<div id="base" class=""> 
+	
+	<!-- 导航 (组合) -->
+	<div id="u24">
+		<div id="u25_div"></div>
+		<!-- 导航栏 (矩形) -->
+		<div id="u25"> 
+			
+			<!-- logo (矩形) -->
+			<div id="u27">
+				<button class="nav_item">WeekDaY</button>
+			</div>
+			
+			<!-- 项目 (矩形) -->
+			<div id="u29">
+				<button class="nav_item">项 目</button>
+			</div>
+			
+			<!-- 我的 (矩形) -->
+			<div id="u31">
+				<button class="nav_item">我 的</button>
+			</div>
+			
+			<!-- 日历 (矩形) -->
+			<div id="u33">
+				<button class="nav_item">日 历</button>
+			</div>
+			
+			<!-- 通知 (矩形) -->
+			<div id="u35">
+				<button class="nav_item">通 知</button>
+			</div>
+			
+			<!-- 搜索 (形状) -->
+			<div id="u37">
+				<button class="nav_item u37_img"></button>
+			</div>
+			
+			<!-- 用户 (形状) -->
+			<div id="u39">
+				<button class="nav_item u39_img"></button>
+			</div>
+		</div>
+	</div>
+	<div id="u518" data-label="二级导航"> 
+		
+		<!-- 二级导航栏 (矩形) -->
+		<div id="u519_div">
+			<div class="erjidaohang"> 
+				<!-- 项目近期 (矩形) -->
+				<div id="u521">
+					<button class="nav_item2">任 务</button>
+				</div>
+				
+				<!-- 项目任务 (矩形) -->
+				<div id="u523">
+					<button class="nav_item2">分 享</button>
+				</div>
+				
+				<!-- 项目日程 (矩形) -->
+				<div id="u525">
+					<button class="nav_item2">文 件</button>
+				</div>
+				
+				<!-- 讨论帖 (矩形) -->
+				
+				<div id="u527">
+					<button class="nav_item2">日 程</button>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Unnamed (组合) -->
+		<div id="u288" class="ax_default"> 
+			
+			<!-- Unnamed (组合) -->
+			<div id="u289" class="ax_default"> 
+				
+				<!-- Unnamed (矩形) -->
+				<div id="u290" class="ax_default box_3">
+					<div id="u290_div" class=""></div>
+					<!-- Unnamed () -->
+					<div id="u291" class="text" style="display: none; visibility: hidden">
+						<p><span></span></p>
+					</div>
+				</div>
+				
+				<!-- Unnamed (水平线) -->
+				<div id="u292" class="ax_default line"> </div>
+				
+				<!-- 分享类别 (组合) -->
+				<div id="u294" class="ax_default" data-label="分享类别"> 
+					
+					<!-- 全部分享 (矩形) -->
+					<div id="u295" class="ax_default box_3" data-label="全部分享">
+						<div id="u295_div" class=""></div>
+						<!-- Unnamed () -->
+						<div id="u296" class="text" style="visibility: visible;">
+							<p><span>全 部</span></p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 分享列表 (组合) -->
+				<div id="u299" class="ax_default" data-label="分享列表"> 
+					
+					<!-- 分享一 (矩形) -->
+					<div id="u300" class="ax_default box_2" data-label="分享一">
+						<div id="u300_div" class=""></div>
+					</div>
+					
+					<!-- 新建分享按钮 (矩形) -->
+					<div id="u312" data-label="新建分享按钮">
+						<button class="btn_bgcolor_blue myfull no_border border_r_15px text_white" onClick="show_modal()">+ 新建日程</button>
+					</div>
+				</div>
+				
+				<!-- Unnamed (组合) -->
+				<div id="u314" class="ax_default"> 
+					
+					<!-- Unnamed (矩形) -->
+					<div id="u315" class="ax_default box_2">
+						<div id="u315_div" class=""></div>
+						<!-- Unnamed () -->
+						<div id="u316" class="text" style="display: none; visibility: hidden">
+							<p><span></span></p>
+						</div>
+					</div>
+					
+					<!-- 分享内容 (多行文本框) -->
+					
+					<div id="u317" class="ax_default text_area" data-label="分享内容">
+						<input id="u317_input" readonly/>
+						<div id="u317_div"></div>
+					</div>
+					
+					<!-- 分享标签 (形状) -->
+					<div id="u318" class="ax_default icon" data-label="分享标签"> <img id="u318_img" class="img " src="images/项目分享/分享标签_u318.png"/> 
+						<!-- Unnamed () -->
+						<div id="u319" class="text" style="display: none; visibility: hidden">
+							<p><span></span></p>
+						</div>
+					</div>
+					
+					<!-- 分享人 (矩形) -->
+					<div id="u320" class="ax_default box_3" data-label="分享人">
+						<div id="u320_div" class="ui button" onClick="change_modal()">编 辑</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--弹出层-->
+	<div id="tanchu" class="ui first modal" isnew="1"> <i class="close icon"></i>
+		<div class="header"> 新建分享 </div>
+		<div class="content" style="margin:5px auto">
+			<div class="ui fluid huge input">
+				<input id="titleinput" type="text" placeholder="分享标题">
+			</div>
+			<div class="ui fluid input" style="margin:5px auto">
+				<input id="textinput" type="text" placeholder="分享内容">
+			</div>
+			<table class="ui celled table"  style="margin:5px auto">
+				<tbody>
+					<tr>
+						<td class="bgcolor_blue_dark text_white text_px18 center aligned" style="width:12.5%">隐私模式</td>
+						<td style="width:12.5%" class="center aligned"><div class="ui toggle checkbox">
+								<input id="checkinput" type="checkbox" name="public">
+							</div></td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="ui celled table" style="margin:10px auto">
+				<tbody>
+					<tr>
+						<td class="center aligned bgcolor_gray_pale text_px18">参与者</td>
+					</tr>
+					<tr>
+						<td class="text_px18">
+							<div class="ui green circular floating icon dropdown button" onClick="showSecondModal()"> <i class="icon add"></i>
+							</div></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="actions">
+			<div class="ui button" onClick="create_content()">确定</div>
+		</div>
+	</div>
+</div>
+<div class="ui second modal" style="margin-left:-150px;width:300px;text-align:center">
+	<div class="header"> 选择成员 </div>
+	<div class="content" style="margin-left:auto; margin-right:auto;width:200px; text-align:left">
+		<div class="ui form" id="member_list">
+			<div class="field">
+				<div class="ui checkbox" id="demo1">
+					<input type="checkbox">
+					<label> 成员1</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="actions" style="text-align:center">
+		<div class="ui button" onClick="closeSecondModal()">取消</div>
+		<div class="ui button" onClick="selectMember()">确定</div>
+	</div>
+</div>
+</body>
+</html>
