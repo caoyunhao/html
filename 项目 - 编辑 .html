@@ -57,71 +57,36 @@
 	</div>
 	<div class="neirong">
 		<div class="edit_form">
-			<div class="header text_px20 margin_bottom_22px"> 编辑日程</div>
-			<button class="btn_bgcolor_black width_full border_r_7px no_border text_white" style="position:absolute; left:20px; top:10px; width:100px; height:40px">返回日程</button>
-			<button class="btn_bgcolor_red width_full border_r_7px no_border text_white" style="position:absolute; right:20px; top:10px; width:100px; height:40px">删除</button>
-			<button class="btn_bgcolor_blue width_full border_r_7px no_border text_white" style="position:absolute; left:20px; bottom:10px; width:100px; height:40px" onClick="addMemberIcon()">相关</button>
-			<button class="btn_bgcolor_red_pale width_full border_r_7px no_border text_white" style="position:absolute; left:140px; bottom:10px; width:100px; height:40px">归档</button>
-			<button class="btn_bgcolor_green width_full border_r_7px no_border text_white" style="position:absolute; right:20px; bottom:10px; width:100px; height:40px">确认修改</button>
+			<div class="header text_px32 margin_bottom_22px"> 编辑日程</div>
+			<button class="btn_bgcolor_black width_full border_r_7px no_border text_white text_px20" style="position:absolute; left:20px; top:10px; width:120px; height:50px">返回日程</button>
+			<button class="btn_bgcolor_green width_full border_r_7px no_border text_white text_px20" style="position:absolute; right:20px; bottom:10px; width:120px; height:50px">确认修改</button>
 
-			<div class="content" style="margin:5px auto">
-				<div class="ui fluid huge input">
-					<input type="text" placeholder="日程标题">
+			<div class="content" style="margin:40px auto">
+				<div class="ui fluid massive input">
+					<input type="text" placeholder="项目标题">
 				</div>
-				<div class="ui fluid input" style="margin:5px auto">
-					<input type="text" placeholder="地点">
-				</div>
-				<table class="ui celled table" style="margin:10px auto">
+
+				<table class="ui celled table" style="margin:30px auto">
 					<tbody>
 						<tr>
-							<td style="width:25%" class="bgcolor_gray_pale text_px18 center aligned">开始时间</td>
+							<td style="width:25%" class="bgcolor_gray_pale text_px18 center aligned">项目的拥有者</td>
 							<td style="width:25%"><div class="ui fluid input" style="margin:0px auto">
 									<input type="text" placeholder="XX:XX">
 								</div></td>
-							<td style="width:25%" class="bgcolor_gray_pale text_px18 center aligned">结束时间</td>
+							<td style="width:25%" class="bgcolor_gray_pale text_px18 center aligned">项目的标签</td>
 							<td style="width:25%"><div class="ui fluid input" style="margin:0px auto">
 									<input type="text" placeholder="XX:XX">
 								</div></td>
 						</tr>
 					</tbody>
 				</table>
-				<table class="ui celled table"  style="margin:5px auto">
-					<tbody>
-						<tr>
-							<td class="bgcolor_gray_pale text_px18 center aligned" style="width:25%">重复性</td>
-							<td style="width:25%; margin:0 auto;"><div class="ui fluid input" style="margin:0px auto">
-									<input type="text" placeholder="不重复、每天、每周">
-								</div></td>
-							<td class="bgcolor_blue_dark text_white text_px18 center aligned" style="width:25%">隐私模式</td>
-							<td style="width:25%" class="center aligned"><div class="ui fluid input" style="margin:0px auto">
-									<input type="text" placeholder="“0”表示关闭,“1”表示开启">
-								</div></td>
-						</tr>
-					</tbody>
-				</table>
-				<button class="width_full height_45px btn_bgcolor_gray_pale no_border border_r_7px text_px18 hover_text_line">点击以编辑参与者</button>
+				<div class="ui fluid huge input" style="margin:30px auto">
+					<input type="text" placeholder="项目的详细信息">
+				</div>
 			</div>
 				
 			<div class="" style="text-align:right; margin-top:20px; height:30px"></div>
 		</div>
-	</div>
-</div>
-<!--弹出层-->
-<div class="ui second modal" style="margin-left:-150px;width:300px;text-align:center">
-	<div class="header"> 选择成员 </div>
-	<div class="content" style="margin-left:auto; margin-right:auto;width:200px; text-align:left">
-		<div class="" id="member_list">
-			<div class="item_list"> <span>asdASD</span>
-				<div class="ui green circular icon button"> <i class="icon add"> </i> </div>
-			</div>
-			<div class="item_list"> <span>aSD</span>
-				<div class="ui green circular icon button"> <i class="icon add"></i> </div>
-			</div>
-		</div>
-	</div>
-	<div class="actions" style="text-align:center">
-		<div class="ui button" onClick="closeSecondModal()">取消</div>
-		<div class="ui button" onClick="addMember('123')">确定</div>
 	</div>
 </div>
 </body>

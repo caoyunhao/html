@@ -167,35 +167,50 @@ button.u39_img {
 .hand:hover{
 	cursor:pointer;
 }
-.btn_bgcolor_green{
+.btn_bgcolor_green,.bgcolor_green{
 	background-color: rgba(33,186,69,1.00);
 }
 .btn_bgcolor_green:hover {
-	background-color: rgba(22,171,57,1.00);
+	background-color: rgba(43,196,79,1.00);
 }
-.btn_bgcolor_blue{
+.btn_bgcolor_green:active {
+	background-color: rgba(13,166,49,1.00);
+}
+.btn_bgcolor_blue,.bgcolor_blue{
 	background-color: rgba(3,169,244,1.00);
 }
 .btn_bgcolor_blue:hover {
-	background-color: rgba(20,180,252,1.00);
+	background-color: rgba(13,179,254,1.00);
 }
-.btn_bgcolor_red{
+.btn_bgcolor_blue:active {
+	background-color: rgba(0,149,224,1.00);
+}
+.btn_bgcolor_red,.bgcolor_red{
 	background-color: rgba(231,76,60,1.00);
 }
 .btn_bgcolor_red:hover {
-	background-color: rgba(255,102,88,1.00);
+	background-color: rgba(241,86,70,1.00);
 }
-.btn_bgcolor_red_pale{
+.btn_bgcolor_red:active {
+	background-color: rgba(211,56,40,1.00);
+}
+.btn_bgcolor_red_pale,.bgcolor_red_pale{
 	background-color: rgba(255,125,77,1.00);
 }
 .btn_bgcolor_red_pale:hover{
 	background-color: rgba(252,158,124,1.00);
 }
-.btn_bgcolor_white{
+.btn_bgcolor_red_pale:active{
+	background-color: rgba(252,158,124,1.00);
+}
+.btn_bgcolor_white,.bgcolor_white{
 	background-color: rgba(255,255,255,1.00);
 }
 .btn_bgcolor_white:hover {
-	background-color: rgba(225,225,225,1.00);
+	background-color: rgba(235,235,235,1.00);
+}
+.btn_bgcolor_white:active {
+	background-color: rgba(215,215,215,1.00);
 }
 .btn_bgcolor_bule_pale{
 	background-color:rgba(205,238,253,1.00);
@@ -206,23 +221,35 @@ button.u39_img {
 .btn_bgcolor_gray_pale:hover{
 	background-color:rgba(222,222,222,1.00);
 }
+.btn_bgcolor_gray_pale:active{
+	background-color:rgba(202,202,202,1.00);
+}
 .btn_bgcolor_pink{
 	background-color:rgba(235,85,118,1.00);
 }
 .btn_bgcolor_navy{
 	background-color:rgba(0,147,147,1.00);
 }
+.btn_bgcolor_navy:hover{
+	background-color:rgba(0,157,157,1.00);
+}
+.btn_bgcolor_navy:active{
+	background-color:rgba(0,127,127,1.00);
+}
 .btn_bgcolor_navy_dark{
 	background-color:rgba(0,15,56,1.00);
 }
-.btn_bgcolor_black{
+.btn_bgcolor_black, .btn_bgcolor_black_select{
 	background-color: rgba(100,100,100,1.00);
 }
-.btn_bgcolor_black:hover{
+.btn_bgcolor_black:hover, .btn_bgcolor_black_select:hover{
 	background-color: rgba(111,111,111,1.00);
 }
-.btn_bgcolor_black:focus{
+.btn_bgcolor_black_select:focus{
 	background-color: rgba(122,122,122,1.00);
+}
+.btn_bgcolor_black:active{
+	background-color: rgba(90,90,90,1.00);
 }
 .bgcolor_blue{
 	background-color: rgba(3,169,244,1.00);
@@ -262,6 +289,30 @@ button.u39_img {
 }
 .text_px20{
 	font-size: 20px;
+}
+.text_px22{
+	font-size: 22px;
+}
+.text_px24{
+	font-size: 24px;
+}
+.text_px26{
+	font-size: 26px;
+}
+.text_px28{
+	font-size: 28px;
+}
+.text_px30{
+	font-size: 30px;
+}
+.text_px32{
+	font-size: 32px;
+}
+.text_px34{
+	font-size: 34px;
+}
+.text_px36{
+	font-size: 36px;
 }
 .hover_text_line:hover{
 	text-decoration: underline;
