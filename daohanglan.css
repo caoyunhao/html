@@ -206,11 +206,23 @@ button.u39_img {
 .btn_bgcolor_gray_pale:hover{
 	background-color:rgba(222,222,222,1.00);
 }
+.btn_bgcolor_pink{
+	background-color:rgba(235,85,118,1.00);
+}
+.btn_bgcolor_navy{
+	background-color:rgba(0,147,147,1.00);
+}
+.btn_bgcolor_navy_dark{
+	background-color:rgba(0,15,56,1.00);
+}
 .btn_bgcolor_black{
 	background-color: rgba(100,100,100,1.00);
 }
 .btn_bgcolor_black:hover{
 	background-color: rgba(111,111,111,1.00);
+}
+.btn_bgcolor_black:focus{
+	background-color: rgba(122,122,122,1.00);
 }
 .bgcolor_blue{
 	background-color: rgba(3,169,244,1.00);

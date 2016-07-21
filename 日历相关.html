@@ -5,6 +5,12 @@
 <title>日历相关</title>
 <link href="日历相关/rili_xiangguan.css" type="text/css" rel="stylesheet">
 <link href="daohanglan.css" type="text/css" rel="stylesheet"/>
+
+<!--<link href="Semantic-UI-master/semantic.min.css" type="text/css" rel="stylesheet"/>
+
+<script type="text/javascript" language="javascript" src="Semantic-UI-master/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="Semantic-UI-master/iframe.js"></script>
+<script type="text/javascript" language="javascript" src="Semantic-UI-master/semantic.min.js"></script>-->
 </head>
 
 <body>
@@ -57,35 +63,93 @@
 	<div class="neirong">
 		<div class="edit_form">
 			<div class="edit_header">
+			<button class="edit_exit no_border text_px18 btn_bgcolor_black text_white hand">返回</button>
+			<p class="edit_header_text text_px20">相关内容</p>
 			</div>
+			<span class="biaoti1">未相关内容</span>
+			<span class="biaoti2">已相关内容</span>
 			<div class="edit_menu">
-				<button class="edit_item btn_bgcolor_blue no_border border_r_15px text_px18 hand text_white">任 务</button>
-				<button class="edit_item btn_bgcolor_blue no_border border_r_15px text_px18 hand text_white">分 享</button>
-				<button class="edit_item btn_bgcolor_blue no_border border_r_15px text_px18 hand text_white">文 件</button>
+				<button class="edit_item btn_bgcolor_black no_border  text_px18 hand text_white" style="border-top-left-radius:10px; border-top-right-radius:10px;" onClick="createBtn('sdfsdf','left_list')">任 务</button>
+				<button class="edit_item btn_bgcolor_black no_border  text_px18 hand text_white" onClick="createBtn('785778','right_list')">分 享</button>
+				<button class="edit_item btn_bgcolor_black no_border  text_px18 hand text_white" style="border-bottom-left-radius:10px; border-bottom-right-radius:10px;" onClick="refreshList()">文 件</button>
 			</div>
-			<div class="edit_content">
-				<button class="edit_select btn_bgcolor_green no_border border_r_7px text_px18 hand text_white"></button>
+			<div class="edit_content" id="right_list">
+
 			</div>
-			<div class="edit_content">
-				<button class="edit_select btn_bgcolor_red no_border border_r_7px text_px18 hand text_white"></button>
+			<div class="edit_content" id="left_list">
+
 			</div>
+<!--			<table class="ui table">
+			  <thead>
+				<tr><th class="ten wide">姓名</th>
+				<th class="six wide">状态</th>
+			  </tr></thead>
+			  <tbody>
+				<tr>
+				  <td>约翰</td>
+				  <td>已审核</td>
+				</tr>
+				<tr>
+				  <td>吉米</td>
+				  <td>已审核</td>
+				</tr>
+				<tr>
+				  <td>吉米</td>
+				  <td>拒绝</td>
+				</tr>
+			  </tbody>
+			  <tfoot>
+				<tr><th>3 个人</th>
+				<th>2 已审核</th>
+			  </tr></tfoot>
+			</table>-->
 		</div>
 	</div>
 </div>
 
 <script>
+var btn_num = 1;
+function createBtn(text, target_id){
+	var newbtn = document.createElement('button');
+	var btn_id = 'btn_num_'+ btn_num;
+	newbtn.setAttribute('id',btn_id);
+	newbtn.innerHTML=text;
+	if(target_id === 'left_list'){
+		newbtn.setAttribute('class', 'edit_select btn_bgcolor_pink no_border border_r_7px text_px18 hand text_white');
+		newbtn.setAttribute('onClick', 'addMember(this.id)');
+	}
+	else{
+		newbtn.setAttribute('class', 'edit_select btn_bgcolor_navy no_border border_r_7px text_px18 hand text_white');
+		newbtn.setAttribute('onClick', 'minusMember(this.id)');
+	}
+	document.getElementById(target_id).appendChild(newbtn);
+	++btn_num;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+function addMember(id){
+	var temp = document.getElementById(id);
+	var newbtn = document.createElement('button');
+	newbtn.setAttribute('id',temp.id);
+	newbtn.innerHTML=temp.innerHTML;
+	document.getElementById(id).remove();
+	newbtn.setAttribute('class', 'edit_select btn_bgcolor_navy no_border border_r_7px text_px18 hand text_white');
+	newbtn.setAttribute('onClick', 'minusMember(this.id)');
+	document.getElementById('right_list').appendChild(newbtn);
+}
+function minusMember(id){
+	var temp = document.getElementById(id);
+	var newbtn = document.createElement('button');
+	newbtn.setAttribute('id',temp.id);
+	newbtn.innerHTML=temp.innerHTML;
+	document.getElementById(id).remove();
+	newbtn.setAttribute('class', 'edit_select btn_bgcolor_pink no_border border_r_7px text_px18 hand text_white');
+	newbtn.setAttribute('onClick', 'addMember(this.id)');
+	document.getElementById('left_list').appendChild(newbtn);
+}
+function refreshList(){
+	document.getElementById('left_list').innerHTML='';
+	document.getElementById('right_list').innerHTML='';
+}
 
 </script>
 
