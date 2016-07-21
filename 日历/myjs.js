@@ -68,25 +68,25 @@ function addMember(string_name){
 	newdiv.setAttribute('class', 'item_list');
 	document.getElementById("member_list").appendChild(newdiv);
 	
-	var newspan = document.createElement('span'); //创建一个div
+	var newspan = document.createElement('span'); //创建一个span
 	var span_id = 'span_id_'+member_num;
 	newspan.setAttribute('id',span_id);
-	newspan.innerHTML = string_name;
+	newspan.innerHTML = string_name+' ';
 	//newcheckbox.setAttribute('class', 'ui checkbox');
 	document.getElementById(div_id).appendChild(newspan);
 	
-	var newdiv2 = document.createElement('div'); //创建一个input
+	var newdiv2 = document.createElement('div'); //创建一个div
 	var div2_id = 'div2_id_'+member_num;
 	newdiv2.setAttribute('id',div2_id);
 	newdiv2.setAttribute('class', 'ui green circular icon button');
-	newdiv2.setAttribute('onClick', 'buttonChange(\''+div2_id+'\')');
-	alert(newdiv2.getAttribute('onClick'));
-	document.getElementById(div_id).appendChild(newdiv2);
 	
-	var newi = document.createElement('i'); //创建一个label
+	var newi = document.createElement('i'); //创建一个i
 	var i_id = 'i_id_'+member_num;
 	newi.setAttribute('id',i_id);
 	newi.setAttribute('class', 'icon add');
+	newdiv2.setAttribute('onClick', 'buttonChange(\'' + div2_id + '\',\'' + i_id + '\')');
+	document.getElementById(div_id).appendChild(newdiv2);
+	alert(newdiv2.getAttribute('onClick'));
 	document.getElementById(div2_id).appendChild(newi);
 	++member_num;
 }
@@ -112,9 +112,16 @@ function setWeekButton(day, time, has){
 		day.style.color="black";
 	}
 }
-function buttonChange(string_id){
-	alert('a');
-	document.getElementById(string_id).setAttribute('class', 'ui red circular icon button');
+function buttonChange(div_id, i_id){
+	var ii_id = document.getElementById(i_id).getAttribute('class');
+	if(ii_id === 'icon minus'){
+		document.getElementById(div_id).setAttribute('class', 'ui green circular icon button');
+		document.getElementById(i_id).setAttribute('class', 'icon add');
+	}
+	else{
+		document.getElementById(div_id).setAttribute('class', 'ui red circular icon button');
+		document.getElementById(i_id).setAttribute('class', 'icon minus');
+	}
 }
 var needCreate = true;
 function createNew(text){
