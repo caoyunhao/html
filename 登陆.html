@@ -57,31 +57,15 @@
 				<div class="nav_item u37_img">
 					<div class="ui fluid dropdown button" style="height:45px; background-color:rgba(0,0,0,0.00)">
 						<i class="search"></i>
-						<div class="menu">
-							<div class="ui icon search input"style="width:300px;">
-							  <i class="search icon"></i>
-							  <input type="text" name="search" placeholder="搜索问题...">
+						<div class="menu" id="search_list">
+							<div class="ui action input" style="width:350px;">
+							  <input type="text" placeholder="搜索...">
+							  <div class="ui button" onClick="addItem()">搜索</div>
 							</div>
 							<div class="divider"></div>
-							<div class="header">
+							<div class="item">
 							  <i class="tags icon"></i>
-							  你想知道什么？
-							</div>
-							<div class="item">
-							  <div class="ui red empty circular label"></div>
-							  如何创建项目？
-							</div>
-							<div class="item">
-							  <div class="ui blue empty circular label"></div>
-							  如何中添加好友？
-							</div>
-							<div class="item">
-							  <div class="ui black empty circular label"></div>
-							  如何退出项目？
-							</div>
-							<div class="item">
-							  <div class="ui green empty circular label"></div>
-							  更多问题...
+							  <span>你想知道什么？</span>
 							</div>
 						  </div>
 					</div>
@@ -188,12 +172,13 @@
 				<div id="u61" class="ax_default button" data-label="登录">
 					<input type="submit" value="登 陆" class="submit"/>
 				</div>
+				
+	<button onClick="addItem('56316546')">sadfsadf</button>
 			</form>			
 		</div>
 	</div>
 	
 
-	
 	
 </div>
 </body>
