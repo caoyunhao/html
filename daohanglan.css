@@ -164,6 +164,9 @@ button.u39_img {
 	border: none;
 	outline: none;
 }
+.hand:hover{
+	cursor:pointer;
+}
 .btn_bgcolor_green{
 	background-color: rgba(33,186,69,1.00);
 }
@@ -257,8 +260,14 @@ button.u39_img {
 .height_60px{
 	height:60px
 }
+.height_full{
+	height:100%;
+}
 .width_full{
 	width:100%;
+}
+.margin_bottom_20px{
+	margin-bottom:20px;
 }
 .margin_bottom_22px{
 	margin-bottom:22px;
