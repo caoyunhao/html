@@ -60,7 +60,9 @@
 			<div class="header text_px20 margin_bottom_22px"> 编辑日程</div>
 			<button class="btn_bgcolor_black width_full border_r_7px no_border text_white" style="position:absolute; left:20px; top:10px; width:100px; height:40px">返回日程</button>
 			<button class="btn_bgcolor_red width_full border_r_7px no_border text_white" style="position:absolute; right:20px; top:10px; width:100px; height:40px">删除</button>
-			
+			<button class="btn_bgcolor_blue width_full border_r_7px no_border text_white" style="position:absolute; left:20px; bottom:10px; width:100px; height:40px" onClick="addMemberIcon()">相关</button>
+			<button class="btn_bgcolor_red_pale width_full border_r_7px no_border text_white" style="position:absolute; left:140px; bottom:10px; width:100px; height:40px">归档</button>
+			<button class="btn_bgcolor_green width_full border_r_7px no_border text_white" style="position:absolute; right:20px; bottom:10px; width:100px; height:40px">确认修改</button>
 
 			<div class="content" style="margin:5px auto">
 				<div class="ui fluid huge input">
@@ -97,23 +99,10 @@
 						</tr>
 					</tbody>
 				</table>
-				<table class="ui celled table" style="margin:10px auto">
-					<tbody>
-						<tr>
-							<td class="center aligned bgcolor_gray_pale text_px18">参与者</td>
-						</tr>
-						<tr>
-							<td class="text_px18" id="member_icon_list"><div class="ui green circular icon button" onClick="showSecondModal()"> <i class="icon add"></i> </div></td>
-						</tr>
-					</tbody>
-				</table>
+				<button class="width_full height_45px btn_bgcolor_gray_pale no_border border_r_7px text_px18 hover_text_line">点击以编辑参与者</button>
 			</div>
-			<button class="btn_bgcolor_blue width_full border_r_7px no_border text_white" style="position:absolute; left:20px; bottom:10px; width:100px; height:40px" onClick="addMemberIcon()">相关</button>
-			<button class="btn_bgcolor_red_pale width_full border_r_7px no_border text_white" style="position:absolute; left:140px; bottom:10px; width:100px; height:40px">归档</button>
-			<div class="actions" style="text-align:right">
-				<div id="modal2_cancel_button" class="ui button" onClick="closeFirstModal()">取消</div>
-				<div id="modal2_confir_button" class="ui positive button" onClick="createContent('132456')">确定</div>
-			</div>
+				
+			<div class="" style="text-align:right; margin-top:20px; height:30px"></div>
 		</div>
 	</div>
 </div>

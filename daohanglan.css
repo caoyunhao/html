@@ -164,6 +164,12 @@ button.u39_img {
 	border: none;
 	outline: none;
 }
+.btn_bgcolor_green{
+	background-color: rgba(33,186,69,1.00);
+}
+.btn_bgcolor_green:hover {
+	background-color: rgba(22,171,57,1.00);
+}
 .btn_bgcolor_blue{
 	background-color: rgba(3,169,244,1.00);
 }
