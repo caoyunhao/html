@@ -1,0 +1,17 @@
+div.neirong{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+
+
+
+div.edit_form{
+	width: 1000px;
+	margin: 0px auto;
+	height: auto;
+	background-color: rgba(255,255,255,1.00);
+	border-radius: 15px;
+	padding: 20px;
+	position: relative;
+}
